@@ -1,0 +1,30 @@
+name: ChestLock
+version: '${project.version}'
+main: com.sinimini876.chestlock.ChestLock
+api-version: 1.19
+
+commands:
+  ping:
+    description: This is a hello command!
+  addplayertochest:
+    description: Adds access to a locked chest
+    usage: /addPlayerToChest <username>
+  removeplayerfromchest:
+    description: Removes access to a locked chest
+    usage: /removePlayerFromChest <username>
+  lockchest:
+    aliases:
+      - lockc
+    description: Locks the chest you're looking at
+    usage: /lockChest (looking at a chest)
+  unlockchest:
+    aliases:
+      - unlockc
+    description: Unlocks the chest you're looking at
+    usage: /unlockChest (looking at a chest)
+  ownerlist:
+    description: Shows the owners of the looking chest
+    usage: /ownerList (looking at a chest)
+  getlocker:
+    description: Gets you a key locker
+    usage: /getlocker
